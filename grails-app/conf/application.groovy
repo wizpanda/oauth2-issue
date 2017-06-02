@@ -26,3 +26,11 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 	[pattern: '/**',             filters: 'JOINED_FILTERS']
 ]
 
+
+
+// Added by the Spring Security OAuth2 Provider plugin:
+grails.plugin.springsecurity.oauthProvider.clientLookup.className = 'com.test.Client'
+grails.plugin.springsecurity.oauthProvider.authorizationCodeLookup.className = 'com.test.AuthorizationCode'
+grails.plugin.springsecurity.oauthProvider.accessTokenLookup.className = 'com.test.AccessToken'
+grails.plugin.springsecurity.oauthProvider.refreshTokenLookup.className = 'com.test.RefreshToken'
+
